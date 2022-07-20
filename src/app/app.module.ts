@@ -11,7 +11,7 @@ import { NextComponent } from './next/next.component';
     NextComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
